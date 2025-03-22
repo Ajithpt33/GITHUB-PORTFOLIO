@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<h1>Welcome to my portfolio!</h1>
+			<p>I'm a passionate web developer with a passion for creating innovative solutions.</p>
+			<p> PERSONAL INFO</p>
+			<UL>NAME:AJITH PT</UL>
+			<ul>PLACE:PALAKKAD,KERALA</ul>
+			<UL>CONTACT NO:8590994956</UL>
+			<UL>EMAIL ID:ajithpalakkottuthodi@gmail.com</UL>
+		</section>
+		<section><button><a href="Downloads\AJITHHH.pdf"> Download resume </a></button></section>
+		<section id="about">
+			<h1>About me</h1>
+			<p>Hello! <b>I'm AJITH PT</b>, a passionate and motivated graduate with a degree in BACHELOR OF COMPUTER APPLICATIONS from Ajk college of arts and science under Bharathiar University. I’m eager to apply my skills and knowledge in web development and coding to make a meaningful impact in tech industry. During my academic journey, I’ve gained hands-on experience in <b>"HTML,CSS,PYTHON,JAVA,SQL"</b> and have worked on projects that have honed my problem-solving, teamwork, and communication skills.
+
+				I am always open to learning new technologies and techniques and am excited about starting my career in tech industry. I’m confident that my adaptability, attention to detail, and enthusiasm will allow me to contribute effectively and grow within any organization.
+				
+				Feel free to explore my portfolio to learn more about my work and the skills I bring to the table. I'm excited about the opportunities ahead and look forward to the possibility of collaborating with like-minded professionals!</p>
+		</section>
+		<section id="projects">
+			<h1>My projects</h1>
+			<ul>
+				<li>
+					<h2>Project 1</h2>
+					<p><b> DATA HIDING FOR FUTURE DATA TRANSFER </b>
+						<li> The project aims to create a user-friendly application with a secure graphical user interface.</li> 
+						<li> It will provide menu-based navigation and encryption/decryption capabilities to protect data.</li>
+						  <li> The application will have five modules: Sender, Users, Encryption, and Decryption.</li> 
+						<li> It will ensure authentication and authorization standards are met during encryption and 
+						decryption processes.</li> </p>
+				</li>
+				<li>
+					<h2>Project 2</h2>
+					<p><b>CROP RECOMMENDATION EDA</b> 
+						<li> Conducted exploratory data analysis to recommend optimal crops based on environmental and 
+						soil conditions. </li> 
+						<li> Handled missing values, treated outliers, and applied encoding techniques for ML compatibility. </li> 
+						<li> Visualized data trends using Matplotlib and Seaborn.</li>  </p>
+				</li>
+			</ul>
+		</section>
+		<section id="contact">
+			<h1>Get in touch</h1>
+			<p>I LOOK FORWARD TO CONNECTING WITH YOU!</p>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br><br>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2025 AJITH PT </p>
+	</footer>
+	<script src="script.js"></script>
+    <style>
+        body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;Lorem
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+section {
+	background-color: #f7f7f7;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	font-size: 24px;
+	margin-top: 0;
+}
+
+p {
+	font-size: 18px;
+}
+
+img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+button{
+	background-color:white;
+	color: black;
+}
+   </style>
+<script class="jS">
+    // Add event listener to nav links
+document.querySelectorAll('nav a').forEach(link => {
+	link.addEventListener('click', event => {
+		event.preventDefault();
+		const sectionId = link.getAttribute('href').slice(1);
+		document.querySelector(`#${sectionId}`).scrollIntoView({ behavior: 'smooth' });
+	});
+});
+
+</script>
+</body>
+</html>
